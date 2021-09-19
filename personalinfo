@@ -1,0 +1,45 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        String nameCustomer;
+        String lastNameCustomer;
+        String homeTown;
+        String emailCustomer;
+        int ageCustomer;
+        String phoneCustomer;
+
+        System.out.print("Type your first name = ");
+        nameCustomer = input.next();
+
+        System.out.print("Type your last name = ");
+        lastNameCustomer = input.next();
+
+        System.out.print("What is your hometown = ");
+        homeTown = input.next();
+
+        System.out.print("Type your e-mail = ");
+        emailCustomer = input.next();
+
+        System.out.print("How old are you = ");
+        ageCustomer = input.nextInt();
+
+        System.out.print("Type your phone number = ");
+        phoneCustomer = input.next();
+
+        System.out.println("+++++++++++++++++++++++++++++++");
+        System.out.println("Please check your info below: ");
+        System.out.println("=============================");
+        System.out.println(nameCustomer + " " + lastNameCustomer);
+        System.out.println("Born in : " + homeTown);
+        System.out.println("E-mail : " + emailCustomer);
+        System.out.println("Age : " + ageCustomer);
+        System.out.println("Phone : " + phoneCustomer);
+
+    }
+}
