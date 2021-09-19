@@ -32,7 +32,7 @@ public class Main {
         System.out.print("Type your phone number = ");
         phoneCustomer = input.next();
 
-        System.out.println("+++++++++++++++++++++++++++++++");
+        System.out.println("+++++++++++++++++++++++++++++");
         System.out.println("Please check your info below: ");
         System.out.println("=============================");
         System.out.println(nameCustomer + " " + lastNameCustomer);
