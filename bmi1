@@ -1,0 +1,22 @@
+package com.company;
+
+import javax.swing.JOptionPane;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        String weightString = JOptionPane.showInputDialog("What is your weight (in Kg)? ");
+        Double weightPerson = Double.parseDouble(weightString);
+
+        String heightString = JOptionPane.showInputDialog("How tall are you (in cm - 1.90)?");
+        Double heightPerson = Double.parseDouble(heightString);
+
+        Double bmiPerson = weightPerson.doubleValue() / (heightPerson.doubleValue() * heightPerson.doubleValue());
+
+        String message = String.format("Your BMI is " + String.format("%.2f", bmiPerson));
+        JOptionPane.showMessageDialog(null, message);
+
+
+    }
+}
