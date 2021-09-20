@@ -1,0 +1,14 @@
+package com.company;
+
+import javax.swing.JOptionPane;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        String name = JOptionPane.showInputDialog("What is your name? ");
+        String message = String.format("Welcome to Java, %s", name + ". \nContact me at mauricioym@hotmail.com");
+        JOptionPane.showMessageDialog(null, message);
+
+    }
+}
