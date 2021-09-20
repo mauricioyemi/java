@@ -1,0 +1,18 @@
+package com.company;
+
+import javax.swing.JOptionPane;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        String gradeStudent = JOptionPane.showInputDialog("What is your final grade? ");
+        int studentFinalGrade = Integer.parseInt(gradeStudent);
+
+        if (studentFinalGrade >= 60)
+            JOptionPane.showMessageDialog(null, "Passed!");
+        else
+            JOptionPane.showMessageDialog(null, "Failed.");
+
+    }
+}
