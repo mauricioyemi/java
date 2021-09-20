@@ -1,0 +1,26 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        String nameCustomer;
+        double moneyWithdraw = 0;
+        double accountBalance = 1000;
+
+        System.out.print("What is your name? ");
+        nameCustomer = input.next();
+
+        System.out.print("How much would you like to withdraw? ");
+        moneyWithdraw = input.nextDouble();
+
+        accountBalance = accountBalance - moneyWithdraw;
+
+        System.out.println("Mr. " + nameCustomer + ", your withdraw of $" + String.format("%.2f", moneyWithdraw) + " was sucessful.");
+        System.out.println("You new account balance is $" + String.format("%.2f", accountBalance) + ".");
+
+    }
+}
