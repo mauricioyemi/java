@@ -1,0 +1,26 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        String nameCustomer;
+        double moneyDeposit;
+        double accountBalance = 0;
+
+        System.out.print("What is your name? ");
+        nameCustomer = input.next();
+
+        System.out.print("How much would you like to deposit? ");
+        moneyDeposit = input.nextDouble();
+
+        accountBalance = accountBalance + moneyDeposit;
+
+        System.out.println("Mr. " + nameCustomer + ", your account balance is: $" + String.format("%.2f", accountBalance));
+        // using double with 2 digits
+
+    }
+}
