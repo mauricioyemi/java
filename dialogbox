@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        JOptionPane.showMessageDialog(null, "Welcome to Java!");
+        JOptionPane.showMessageDialog(null, "Welcome to Java!\nI am a software developer.");
 
     }
 }
