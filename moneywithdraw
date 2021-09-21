@@ -20,7 +20,7 @@ public class Main {
         accountBalance = accountBalance - moneyWithdraw;
 
         System.out.println("Mr. " + nameCustomer + ", your withdraw of $" + String.format("%.2f", moneyWithdraw) + " was sucessful.");
-        System.out.println("You new account balance is $" + String.format("%.2f", accountBalance) + ".");
+        System.out.println("Your new account balance is $" + String.format("%.2f", accountBalance) + ".");
 
     }
 }
