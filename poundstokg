@@ -1,0 +1,21 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        double poundAmount;
+        double kiloAmount;
+
+        System.out.print("How many pounds do you wish to convert? ");
+        poundAmount = input.nextDouble();
+
+        kiloAmount = (double) poundAmount * 0.45359237;
+
+        System.out.println("The amount in kilograms is = " + String.format("%.2f", kiloAmount) + " kg");
+
+    }
+}
